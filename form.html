@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>IST 256: Javaform validation</title>
+</head>
+
+<body >
+    <form method="get">
+        <div class="container mt-2 p-2" style="background-color:white">
+            <link rel="styleSheet" href="style.css">
+
+        <div class="container mt-2 p-2">
+            <div class="mb-3 row">
+                <label for="name" class="form-label col-2">Name</label>
+                <div class="col-3">
+
+                    <input type="text" class="form-control" id="name" />
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="email" class="form-label col-2">Email address</label>
+                <div class="col-3">
+                    <input type="email" class="form-control" id="email" />
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="numClasses" class="form-label col-2">How many classes are you taking this semester? 8 Max</label>
+                <div class="col-3">
+                    <input type="number" class="form-control" id="numClasses" />
+                    <span id="number-warn" style="display:none;"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+            <div class="mb-3 row">
+                <label for="tbPhone" class="form-control col-2">Phone Number</label>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="tbPhone">
+                </div>
+            </div>       
+            <div class="mb-3 row">
+                <label for="favMovie" class="form-label col-2">What is your Favotite movie?</label>
+                <div class="col-3">
+
+                    <input type="text" class="form-control" id="favMovie" />
+                </div>
+            </div> 
+
+                    <input type="submit" onclick="validate()" name="submit" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="Javascript/form validation.js"></script>
+
+</body>    
+</html>
